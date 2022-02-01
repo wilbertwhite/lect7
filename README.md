@@ -4,9 +4,9 @@ This demo explains how to take a Github repository and deploy it to the world!
 
 ## Copy this repo to your own personal one
 1. On https://github.com/new, create a new repository (personal, not owned by org) called `lect7`
-2. In your VM terminal, in your home directory, clone the repo:`git clone https://github.com/NJIT-CS490-SP21/lect6-demo-heroku.git`
+2. In your terminal, in your home directory, clone the repo:`git clone https://github.com/jomart-gsu/csc4350-lect7-demo.git`
 3. `cd` into the repository that is created and you should see all the files now.
-4. Then, connect this cloned repo to your new personal repo made in Step 1: `git remote set-url origin https://www.github.com/{your-username}/lect7` (be sure to change your username and remove the curly braces)
+4. Then, connect this cloned repo to your new personal repo made in Step 1: `git remote set-url origin https://www.github.com/{your-username}/lect7.git` (be sure to change your username and remove the curly braces)
 5. Run `git push origin main` to push the local repo to remote. You should now see this same code in your personal `lect7` repo.
 
 ## Sign up for New York Times Developer Account
