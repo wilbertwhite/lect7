@@ -32,7 +32,7 @@ port=int(os.getenv('PORT', 8080)),
 2. Preview web page in browser '/'
 
 ## Deploy to Heroku
-1. Install Heroku CLI: `sudo snap install --classic heroku`. This could take a few minutes. In the meantime...
+1. Install Heroku CLI: For WSL users, run `sudo snap install --classic heroku`. For Mac users, run `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` if you don't have Homebrew installed, then `brew tap heroku/brew && brew install heroku`. This could take a few minutes. In the meantime...
 2. Create a free account on Heroku https://signup.heroku.com/login
 3. Create a `requirements.txt` file with all your non-standard dependencies (based on any libraries you are importing), separated by a newline. In our case, they are `Flask` w/ a capital F, `requests`, and `python-dotenv`. Note that libraries like `os` are standard imports, so they don't need to be included.
 4. Create a `Procfile`, which has the command that Heroku will use to run your app: `web: python app.py` (see documentation https://devcenter.heroku.com/articles/getting-started-with-python#define-a-procfile)
