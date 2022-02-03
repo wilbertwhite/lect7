@@ -10,7 +10,7 @@ app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 def hello_world():
     """ Returns root endpoint HTML """
 
-    keyword_query = 'Apple' # Change it to something you're interested in!
+    keyword_query = 'Street Fighter' # Change it to something you're interested in!
     article_data = get_article_data(keyword_query)
 
     return render_template(
@@ -23,5 +23,7 @@ def hello_world():
 app.run(
     host=os.getenv('IP', '0.0.0.0'),
     port=int(os.getenv('PORT', 8080)),
-    debug=True
+    debug=True,
+    host='0.0.0.0',
+    port=int(os.getenv('PORT', 8080)),
 )
